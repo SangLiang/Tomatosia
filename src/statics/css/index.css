@@ -17,6 +17,22 @@ body {
   text-decoration: none;
 }
 
+button {
+  border-radius: 4px;
+  width: 120px;
+  height: 34px;
+  outline: none;
+  border: none;
+  background: #fff;
+  color: #fd4e53;
+  font-size: 16px;
+  display: block;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/*首页*/
 #main {
   width: 800px;
   margin: 0 auto;
@@ -58,7 +74,23 @@ body {
   background: #eee;
 }
 
+/*倒计时*/
 #clock {
-  height: 200px;
-  width: 200px;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fd4e53;
+}
+
+#clock #clock-timer {
+  margin: 0 auto;
+  width:300px;
+  height: 300px;
+  display: block;
+  text-align: center;
+  color:#fff;
+  font-size: 70px;
+  box-sizing: border-box;
+  padding-top:80px;
 }

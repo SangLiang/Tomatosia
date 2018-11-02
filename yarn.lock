@@ -2970,6 +2970,10 @@ jmespath@0.15.0:
   version "0.15.0"
   resolved "http://registry.npm.taobao.org/jmespath/download/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
 
+jqeury@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/jqeury/download/jqeury-1.0.0.tgz#1a0025521d04303f71b2230a20048b30ca19ae23"
+
 jquery@^3.3.1:
   version "3.3.1"
   resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
