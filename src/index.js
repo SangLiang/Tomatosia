@@ -1,4 +1,5 @@
 import { app, BrowserWindow,Menu ,ipcMain} from 'electron';
+import db from './dataBase';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -24,21 +25,22 @@ const menu = Menu.buildFromTemplate(tp);
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    minWidth: 800,
+    minHeight: 600,
+    resizable:false
     // resize:false,
   });
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
-  clockWindow = new BrowserWindow({
-        width: 800,
-        height: 600,
-        show: false
-    })
+  // clockWindow = new BrowserWindow({
+  //       width: 800,
+  //       height: 600,
+  //       show: false
+  //   })
 
-    clockWindow.loadURL('file://' + __dirname + '/clock.html') //新窗口
+  // clockWindow.loadURL('file://' + __dirname + '/clock.html') //新窗口
 
 
   // Open the DevTools.
@@ -55,7 +57,7 @@ const createWindow = () => {
 
  ipcMain.on('show',function() {
   mainWindow.hide();
-  clockWindow.show();
+  // clockWindow.show();
  })
 
 // This method will be called when Electron has finished
