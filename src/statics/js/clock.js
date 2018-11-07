@@ -31,7 +31,6 @@ TimerClock.run = function () {
     if (!_switch) {
       clearInterval(time);
     }
-    // console.log(111);
   }, 1000);
 }
 
