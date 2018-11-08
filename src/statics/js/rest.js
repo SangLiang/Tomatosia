@@ -2,9 +2,7 @@ import $ from 'jquery';
 
 var TimerClock = {};
 
-var _t = localStorage.getItem("baseTime");
-
-// 是否停止计时
+var _t = localStorage.getItem("restTime");
 var _switch = localStorage.getItem("timer_witch");
 
 TimerClock.baseTime = _t || 0;
@@ -37,12 +35,8 @@ TimerClock.run = function () {
 }
 
 TimerClock.alert = function () {
-  alert("番茄时间到");
-  $(".restButton").show();
+  alert("休息时间到");
+  $(".backButton").show();
 }
-
-$(".restButton").click(function(){
-  localStorage.setItem("timer_witch",true);
-})
 
 TimerClock.run();

@@ -150,9 +150,29 @@ button {
   box-sizing: border-box;
 }
 
+/*休息界面*/
 #rest {
   padding-top: 10px;
   width:800px;
   height: 600px;
   background:#5ecfa3;
+}
+
+#rest #clock-timer {
+  padding-top:30px;
+  margin: 0 auto;
+  width:300px;
+  height: 200px;
+  display: block;
+  text-align: center;
+  color:#fff;
+  font-size: 70px;
+  box-sizing: border-box;
+}
+
+
+#rest .title {
+  color:#fff;
+  text-align: center;
+  font-size:50px; 
 }

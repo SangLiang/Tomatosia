@@ -6,7 +6,10 @@ $(function () {
 
   $(".start").click(function () {
     localStorage.setItem("timer_witch",true);
-    console.log(23232);
+  });
+
+  $(".historyButton").click(function(){
+  	alert("敬请期待...");
   });
 })
 
@@ -41,8 +44,6 @@ function initData(){
 		localStorage.setItem("tomatoCountToLongRest",data.tomatoCountToLongRest);
 	}
 }
-
-
 
 // import { remote , ipcRenderer } from "electron";
 // const Menu = remote.Menu;
